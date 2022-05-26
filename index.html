@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ISoftBet</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+
+    <html>
+    <body ng-app="svgGenApp">
+        <div ng-controller="svgCtrl"
+             class="wide"
+             load-data>
+
+            <p class="container">{{subtitle1}}</p>
+            <p class="container">{{subtitle2}}</p>
+            <div id="output" class="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
+        </div>
+
+        <p1>Number of shape per second</p1>
+        <input id=demoInput type=number min=0 max=100>
+        <script>
+            function increment() {
+                document.getElementById('demoInput').stepUp();
+            }
+            function decrement() {
+                document.getElementById('demoInput').stepDown();
+            }
+        </script>
+        <pre class="tab"></pre>
+        <p2>Gravity Value</p2>
+        <input id=demoInput type=number min=0 max=100>
+        <script>
+            function increment() {
+                document.getElementById('demoInput').stepUp();
+            }
+            function decrement() {
+                document.getElementById('demoInput').stepDown();
+            }
+        </script>
+    </body>
+</html>
+
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.2/angular.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/spin.js/2.3.2/spin.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular-spinner/0.8.1/angular-spinner.min.js'></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
